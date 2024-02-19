@@ -1,5 +1,13 @@
 const nome = prompt("Come ti chiami?");
 const cognome = prompt("Qual è il tuo cognome?");
 const colore = prompt("Il tuo colore preferito?");
-const datiUtente = nome + " " + cognome + " " + colore
-console.log(nome, cognome, colore, datiUtente);
+const nomeCognome = nome + cognome;
+const coloreNumero = colore + 24;
+console.log(nome, cognome, colore, nomeCognome, coloreNumero);
+document.getElementById("password").innerHTML =
+`
+<p> 
+  Ciao <strong>${nomeCognome}</strong>,<br>
+  Questa è la tua Password: <strong>${nomeCognome + coloreNumero}</strong>
+</p>
+`;
